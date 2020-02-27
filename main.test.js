@@ -2,6 +2,83 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function(NumArr){
+  let sum = 0;
+  for (const num of NumArr){
+    sum = sum + num;
+  } 
+  return sum;
+};
+
+const countSpaces = function(str){
+  let total = 0;
+  for (const char of str){
+    if (char === ' '){
+      total = total + 1;
+    }
+  }
+  return total;
+};
+
+const countTrues = function(arr){
+  let total = 0;
+  for (const booleans of arr){
+    if (booleans === true){
+      total ++;
+    }
+  }
+  return total;
+};
+
+const makeFriendly = function (paragraph){
+  let words = '';
+  for (const char of paragraph){
+    if (char === '.'){
+      words = words + '!';
+    } else {
+      words = words + char;
+    }
+  }
+return words;
+};
+
+const cubeAll = function(numArray){
+  let newArray = [];
+  for (const num of numArray){
+    newArray.push(num**3);
+  }
+return newArray;
+};
+
+const addNoises = function(arr){
+  const dogs = [
+    'Fido',
+    'Rolph',
+    'Maisie',
+  ];
+
+  const cats = [
+    'Garfield',
+    'Heathcliff',
+  ];
+
+  const dinos = [
+    'Barnie',
+    'Sharp Tooth',
+  ]; 
+let newArray = [];
+  for (const animal of arr){
+    if (dogs.includes(animal)){
+  newArray.push(animal + ' says "Woof!"')
+}else if (cats.includes(animal)){
+  newArray.push(animal + ' says "Meow!"')
+}else if (dinos.includes(animal)){
+  newArray.push(animal + ' says "ROWR."')
+}
+  }
+  return newArray;
+};
+
 
 
 
